@@ -14,25 +14,20 @@ public class User implements Serializable {
     /**
      * 
      */
-
     @TableId
     private Integer id;
-
     /**
      * 用户名
      */
     private String username;
-
     /**
      * 路径前缀
      */
     private String path;
-
     /**
      * 用户密码
      */
     private String password;
-
     /**
      * 创建时间
      */

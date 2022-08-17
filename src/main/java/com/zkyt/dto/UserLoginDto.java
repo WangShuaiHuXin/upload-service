@@ -1,7 +1,6 @@
 package com.zkyt.dto;
 
 import lombok.Data;
-
 import javax.validation.constraints.NotEmpty;
 
 
@@ -16,6 +15,7 @@ public class UserLoginDto {
      */
     @NotEmpty(message = "用户名为空")
     private String username;
+
     /**
      * 用户密码
      */

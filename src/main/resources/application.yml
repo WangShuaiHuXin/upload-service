@@ -1,15 +1,28 @@
+server:
+  port: 8999
+#  servlet:
+#    context-path: /uploadservice
+  tomcat:
+    remoteip:
+      remote-ip-header: X-Real-IP
+      protocol-header: X-Forwarded-Proto
 spring:
+  application:
+    name: uploadservice
   datasource:
-    url: jdbc:mysql://192.168.10.31:3306/t_upload?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
+#    url: jdbc:mysql://localhost:3306/t_upload?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
+#    url: jdbc:mysql://mysql:3306/t_upload?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
+    url: jdbc:mysql://124.71.69.19:13306/t_upload?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
     username: root
-    password: root
+    password: zkyt@2022
+#    password: 123
   servlet:
     multipart:
       max-file-size: 2000MB #单个文件最大
       max-request-size: 2000MB #总和大小
 file:
-  path: D:\\data\\
+  path: /data/shantou-upload-file/
 
-server:
-  port: 8999
+
+
 

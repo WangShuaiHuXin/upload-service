@@ -33,7 +33,6 @@ public class FileUploadTest {
     private static final int bytesSize = 1024 * 1024 * 10;
     public static long timestamp = 1657704152000L;
     public static String token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHBpcmVUaW1lIjoxNjU5NjgzOTMxNDYwLCJ1c2VySWQiOjF9.dzFdSzcyJxOmmaVhiaVzWGTwWJ5scw2MvMSFRBeiiaI";
-
     public static String fileName = "CLion2020.zip";
     public static String filePath = "F:\\data\\"+fileName;
     public static String checkFilePath = "F:\\data\\"+fileName;

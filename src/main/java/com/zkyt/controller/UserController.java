@@ -18,16 +18,16 @@ import javax.validation.Valid;
  */
 
 @RestController
-@RequestMapping("user")
+@RequestMapping("/user")
 public class UserController {
 
     @Autowired
     private UserService userService;
 
 
-    @PostMapping("login")
+    @PostMapping("/login")
     @PassToken
-    public Object login(@RequestBody UserLoginDto userLoginDto){
+    public Object login(@RequestBody UserLoginDto userLoginDto) throws Exception {
         return R.okData(userService.login(userLoginDto));
     }
 

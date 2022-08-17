@@ -25,7 +25,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     @Override
     public Object login(UserLoginDto userLoginDto) throws Exception {
         //校验参数
-        if (StringUtils.isEmpty(userLoginDto.getUsername()) || StringUtils.isEmpty(userLoginDto.getPassword())){
+        if (StringUtils.isEmpty(userLoginDto.getUsername()) || StringUtils.isEmpty(userLoginDto.getPassword())) {
             throw new ServiceException("账号或密码错误！");
         }
 
@@ -33,13 +33,14 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         LambdaQueryWrapper<User> lambda = new LambdaQueryWrapper<>();
         lambda.eq(User::getUsername, userLoginDto.getUsername());
         User one = getOne(lambda);
+        if (null == one) throw new ServiceException("账号或密码错误！");
 
-        //进行了RSA解密过程
-        String password = userLoginDto.getPassword();
-        password = RSAUtils.decrypt(password);
+            //进行了RSA解密过程
+        String rsaPasSword = userLoginDto.getPassword();
+        rsaPasSword = RSAUtils.decrypt(rsaPasSword);
 
-        if (one == null || !one.getPassword().equals(password)) {
-            throw new ServiceException("账号或密码错误！");
+        if (!StringUtils.equals(one.getPassword(),rsaPasSword)) {
+            throw new ServiceException("密码错误！");
         }
         return TokenUtil.getToken(one.getId());
     }

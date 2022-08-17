@@ -17,11 +17,11 @@ public class CheckDto {
    private String fileName;
 
    /**  文件字节数 判断文件字节数 **/
-   @NotNull(message = "文件字节大小为空")
+ //  @NotNull(message = "文件字节大小为空")
    private Long byteSize;
 
    /**  修改时间戳 判断文件修改时间  注意:js或其他语言可能不支持长数字 **/
-   @NotNull(message = "文件修改时间戳为空")
+  // @NotNull(message = "文件修改时间戳为空")
    private Long fileUpdateTime;
 
    /** 路径 检查指定的路径上传文件，默认传空 "" 字符串 **/

@@ -4,10 +4,13 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
+
 /**
  * @author lc
  * @since 7/11/22
  */
+//@EnableSwagger2  //开启swagger
 @SpringBootApplication
 public class UploadApp {
     public static void main(String[] args) {

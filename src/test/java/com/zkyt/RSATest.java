@@ -1,6 +1,7 @@
 package com.zkyt;
 
 import static com.zkyt.util.RSAUtils.decrypt;
+import static com.zkyt.util.RSAUtils.encrypt;
 
 public class RSATest {
     public static void main(String[] args) throws Exception {
@@ -19,6 +20,7 @@ public class RSATest {
 //        String s = "KIyyV94V8d5KfsOeomDNR3L31UIQjH7b0W0z3Yzy5wWpG9fTUm20hElCbYUmCE5MDjOKmtvKPkwtDc6VYNvJMoLqKWOySh5Pb1yPV5IqSidn2QHMjhLpuLSv06UuL65jOTyXt4qFf+7+PEZgsC8A0gL16dfSueweCr+fUtzPLYI=";
 //        String decrypt = decrypt(s);
 //        System.out.println(decrypt);
+        System.out.println(encrypt("123"));
         System.out.println(decrypt("fTk9PtYiu2zrcTRoHAbNjYzqEavlKSwStvoz6jRKB/y73vzycnknuGJZeEXXddQme59M+y/NGX0c2p9162FbjpxkYRYIhpGV1Eio60IYbpQxaXzqDr7V5AB0b7PhE//V8vx3OzNHwGUaK80JWfkju5eVwIHVkOnnBCKe/2Bf9p8="));
     }
 
