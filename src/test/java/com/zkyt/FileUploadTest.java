@@ -48,9 +48,9 @@ public class FileUploadTest {
         request.header(TokenUtil.HeaderKey, token);
         CheckDto checkDto = new CheckDto();
         checkDto.setFileName(fileName);
-        checkDto.setByteSize(file.length());
+  /*      checkDto.setByteSize(file.length());
         checkDto.setFileUpdateTime(timestamp);
-        checkDto.setPath("");
+        checkDto.setPath("");*/
 
         ObjectMapper mapper = new ObjectMapper();
         HashMap hashMap = mapper.convertValue(checkDto, HashMap.class);
@@ -133,9 +133,5 @@ public class FileUploadTest {
             HttpResponse response = request.execute();
             System.out.println(response.body());
         }
-
-
     }
-
-
 }

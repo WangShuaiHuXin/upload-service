@@ -19,6 +19,9 @@ public class RSAUtils {
     private static String publicKey = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCDrKWklonbo4ZFgwLgE63wt+sHiB4Uq0Tl6V6g2Aoj5IPRd4TL8mJlMkaJu/c3G212jhjbUjYkWn5HOnrUwrVN1q+mJGGUCED6ruTNMiAc1Oe5gbLwGIeyk4IMuZFUVwq7XdTgVfFo9cVRAM8jIWftJrCm63ZrqqU/AdBoU4FSTQIDAQAB";
     private static String privateKey = "MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAIOspaSWidujhkWDAuATrfC36weIHhSrROXpXqDYCiPkg9F3hMvyYmUyRom79zcbbXaOGNtSNiRafkc6etTCtU3Wr6YkYZQIQPqu5M0yIBzU57mBsvAYh7KTggy5kVRXCrtd1OBV8Wj1xVEAzyMhZ+0msKbrdmuqpT8B0GhTgVJNAgMBAAECgYBRXXDp2IANcem5sHApaN+1/OBFwi3cVcz4SRHJUFZLwZxW5oTvxbJZmAyQdc8YhWFJvhrMA+wi4KxhdViLelmvflUQ8OkiGPvvd8nFcHtrjLSI6DyMPdZzt9LwbNp24wpzW8H7viLF96jD1p+KnRlMPSZZY95UbBb8mwgb8cY0nQJBANqueW7KeFVpnFdk8IzKNTIFiB1Pm8S+7xzqb1RqPHyC5s7BqUTXiIXk+c9XGU7QcLOM2fhgsF3hmAFeBx4aSyMCQQCaJRkGQ6O/jBVcweT2mUj3iJ0xgPR918LFwG5O03ZC6ibWb5GDcLhgDi/dcROy8nTA9AhBjg1ptSchl4zO9LvPAkA/2VdtSMKPtbFHNxqhEN0tSL4wSLEjZdgs6iotTINym0nGrna8ue2LooppxnWGNIfjdMmjop98GcUnCQws9uJfAkAYFugcRIHYs4m7H0orB7WRibYXQHH1ILz9rp8OjpmSx4keRf1Vr04BJPZyAvPzKVT5uql3pT2PYZIl+8szpKedAkEArk2Dua/fdgnohm42gxkWTBupdALkNKCSOKKZCykAUXUo075L5fQ/kjchPdU63LdNODoOklfRGe5d9fdjuH/dDw==";
 
+    public static void main(String[] args) throws Exception {
+        System.out.println(encrypt("123"));
+    }
     /**
      * 生成公钥和私钥
      *

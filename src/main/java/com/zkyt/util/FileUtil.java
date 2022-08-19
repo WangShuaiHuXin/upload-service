@@ -129,6 +129,7 @@ public final class FileUtil {
             t.delete();
         }
         File t = new File(path);
+        System.out.println("----------------");
         t.delete();
     }
 

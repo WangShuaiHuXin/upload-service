@@ -4,7 +4,7 @@ import lombok.Data;
 
 /**
  * 泛型支持
- * @author lc
+ * @author ws
  * @since  2020/11/30
  */
 @Data

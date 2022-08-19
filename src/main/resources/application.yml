@@ -14,6 +14,7 @@ spring:
 #    url: jdbc:mysql://mysql:3306/t_upload?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
     url: jdbc:mysql://124.71.69.19:13306/t_upload?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
     username: root
+#    password: root
     password: zkyt@2022
 #    password: 123
   servlet:
@@ -22,6 +23,7 @@ spring:
       max-request-size: 2000MB #总和大小
 file:
   path: /data/shantou-upload-file/
+#  path: D:\\data\\
 
 
 
